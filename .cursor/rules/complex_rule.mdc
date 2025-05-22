@@ -1,0 +1,24 @@
+---
+description: Complex rule file with multiple configurations
+globs: ["*.md", "docs/**/*"]
+alwaysApply: false
+aiRecommended: true
+---
+# Complex Rule File
+
+This rule file combines multiple metadata configurations to demonstrate a more complex rule setup.
+
+## Guidelines
+- These rules apply to markdown files and documentation
+- They are recommended by AI assistants when appropriate
+- They represent best practices for documentation
+
+## Specific Rules
+1. Use proper heading hierarchy (H1 > H2 > H3)
+2. Include code examples with proper syntax highlighting
+3. Keep documentation up-to-date with code changes
+4. Use consistent terminology throughout documentation
+
+## Purpose
+This file demonstrates a more complex rule file with multiple configuration options.
+

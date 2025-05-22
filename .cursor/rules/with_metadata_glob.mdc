@@ -1,0 +1,17 @@
+---
+description: Rule file that applies to specific file patterns
+globs: ["*.js", "*.ts", "src/**/*.tsx"]
+alwaysApply: false
+---
+# Glob-Specific Rule File
+
+This rule file includes a metadata header with specific globs, which means it should only be applied to files matching those patterns.
+
+## Guidelines
+- These rules apply specifically to JavaScript and TypeScript files
+- They are automatically applied to files matching the glob patterns
+- They represent best practices for JS/TS development
+
+## Purpose
+This file demonstrates a rule file that should only be applied to specific file types based on glob patterns.
+

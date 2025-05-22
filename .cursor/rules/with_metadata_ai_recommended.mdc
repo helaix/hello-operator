@@ -1,0 +1,18 @@
+---
+description: Rule file that is AI-recommended for certain contexts
+globs: 
+alwaysApply: false
+aiRecommended: true
+---
+# AI-Recommended Rule File
+
+This rule file includes a metadata header with `aiRecommended: true`, which means it should be recommended by AI assistants in appropriate contexts.
+
+## Guidelines
+- These rules should be suggested by AI assistants when relevant
+- They represent best practices that may not always apply
+- AI should use judgment about when to apply these rules
+
+## Purpose
+This file demonstrates a rule file that should be recommended by AI assistants in appropriate contexts.
+

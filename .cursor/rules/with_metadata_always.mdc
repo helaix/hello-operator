@@ -1,0 +1,17 @@
+---
+description: Rule file that should always be applied
+globs: 
+alwaysApply: true
+---
+# Always Apply Rule File
+
+This rule file includes a metadata header with `alwaysApply: true`, which means it should always be applied regardless of file context.
+
+## Guidelines
+- These rules should always be applied
+- They are not limited to specific file types
+- They represent universal best practices
+
+## Purpose
+This file demonstrates a rule file that should always be applied to all files in the project.
+

@@ -1,0 +1,18 @@
+---
+description: Rule file that should never be applied automatically
+globs: 
+alwaysApply: false
+neverApply: true
+---
+# Never Apply Rule File
+
+This rule file includes a metadata header with `neverApply: true`, which means it should never be applied automatically.
+
+## Guidelines
+- These rules should only be applied when explicitly requested
+- They are not automatically applied to any files
+- They represent specialized guidelines that need manual activation
+
+## Purpose
+This file demonstrates a rule file that should never be automatically applied to files in the project.
+
