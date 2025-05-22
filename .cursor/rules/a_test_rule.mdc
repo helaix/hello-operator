@@ -1,0 +1,17 @@
+---
+description: Test rule file to check alphabetical ordering
+globs: ["*.test"]
+alwaysApply: false
+---
+# Alphabetical Test Rule File
+
+This rule file is created to test if the system highlights rule files based on alphabetical ordering.
+
+## Guidelines
+- This file should come before complex_rule.mdc alphabetically
+- It has a simple metadata configuration
+- It should be highlighted if alphabetical ordering is used
+
+## Purpose
+This file is used to test the hypothesis that the system selects the first rule file alphabetically when displaying information about agent rules.
+
