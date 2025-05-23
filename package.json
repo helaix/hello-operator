@@ -1,0 +1,46 @@
+{
+  "name": "hello-operator",
+  "version": "1.0.0",
+  "description": "Hello Operator - Voice Assistant and Development Tools",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:voice-assistant",
+    "install:voice-assistant": "cd packages/@sparkflow/voice-assistant-expo && npm install",
+    "build": "npm run build:voice-assistant",
+    "build:voice-assistant": "cd packages/@sparkflow/voice-assistant-expo && npm run build",
+    "test": "npm run test:voice-assistant",
+    "test:voice-assistant": "cd packages/@sparkflow/voice-assistant-expo && npm test",
+    "lint": "npm run lint:voice-assistant",
+    "lint:voice-assistant": "cd packages/@sparkflow/voice-assistant-expo && npm run lint",
+    "typecheck": "npm run typecheck:voice-assistant",
+    "typecheck:voice-assistant": "cd packages/@sparkflow/voice-assistant-expo && npm run typecheck",
+    "start": "cd packages/@sparkflow/voice-assistant-expo && npm start",
+    "start:web": "cd packages/@sparkflow/voice-assistant-expo && npm run web",
+    "start:ios": "cd packages/@sparkflow/voice-assistant-expo && npm run ios",
+    "start:android": "cd packages/@sparkflow/voice-assistant-expo && npm run android"
+  },
+  "keywords": [
+    "voice-assistant",
+    "expo",
+    "react-native",
+    "gemini",
+    "ai",
+    "linear",
+    "github",
+    "codegen"
+  ],
+  "author": "Helaix",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+

@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "version": 3,
+  "projects": {
+    "voice-assistant-expo": {
+      "root": "packages/@sparkflow/voice-assistant-expo",
+      "sourceRoot": "packages/@sparkflow/voice-assistant-expo/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nx/js:tsc",
+          "options": {
+            "outputPath": "dist/packages/@sparkflow/voice-assistant-expo",
+            "main": "packages/@sparkflow/voice-assistant-expo/App.tsx",
+            "tsConfig": "packages/@sparkflow/voice-assistant-expo/tsconfig.json"
+          }
+        },
+        "test": {
+          "executor": "@nx/jest:jest",
+          "options": {
+            "jestConfig": "packages/@sparkflow/voice-assistant-expo/jest.config.js"
+          }
+        },
+        "lint": {
+          "executor": "@nx/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["packages/@sparkflow/voice-assistant-expo/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "voice-assistant-expo",
+  "cli": {
+    "defaultCollection": "@nx/react-native"
+  }
+}
+
