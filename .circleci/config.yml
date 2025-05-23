@@ -1,0 +1,39 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:20.0
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          name: Install voice assistant dependencies
+          command: |
+            cd packages/@sparkflow/voice-assistant-expo
+            npm ci
+      - run:
+          name: TypeScript check
+          command: |
+            cd packages/@sparkflow/voice-assistant-expo
+            npm run typecheck
+      - run:
+          name: Run tests
+          command: |
+            cd packages/@sparkflow/voice-assistant-expo
+            npm test
+      - run:
+          name: Build check
+          command: |
+            cd packages/@sparkflow/voice-assistant-expo
+            npx expo export --platform web
+
+workflows:
+  test-and-build:
+    jobs:
+      - test
+
